@@ -12,12 +12,12 @@
   <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="stylesheet" href="./app.css">
-  <title>Мой прогресс — дневник</title>
+  <title>Мой прогресс 2.0 — дневник</title>
 </head>
 <body>
 <div class="app-shell">
 <header class="topbar">
-  <div class="brand"><div class="brand-mark" aria-hidden="true">✦</div><div><span class="eyebrow">ТВОЙ ЛИЧНЫЙ ДНЕВНИК</span><h1>Мой прогресс<span class="accent">.</span></h1></div></div>
+  <div class="brand"><div class="brand-mark" aria-hidden="true">✦</div><div><span class="eyebrow">ТВОЙ ЛИЧНЫЙ ДНЕВНИК</span><h1>Мой прогресс<span class="accent">.</span><sup class="version-tag">2.0</sup></h1></div></div>
   <button class="icon-btn settings-open" aria-label="Настройки" title="Настройки">⚙</button>
 </header>
 <main id="main" tabindex="-1"></main>
@@ -27,11 +27,13 @@
   <button data-tab="food" class="nav-item"><span class="nav-ico">◉</span><span>Питание</span></button>
   <button data-tab="health" class="nav-item"><span class="nav-ico">♡</span><span>Здоровье</span></button>
   <button data-tab="progress" class="nav-item"><span class="nav-ico">▥</span><span>Прогресс</span></button>
+  <button data-tab="calendar" class="nav-item"><span class="nav-ico">▦</span><span>Календарь</span></button>
 </nav>
 </div>
 <div id="modal-root"></div>
 <div id="toast" role="status" aria-live="polite"></div>
 <input type="file" id="import-file" accept="application/json,.json" hidden>
 <script src="./app.js" defer></script>
+<script src="./v2.js" defer></script>
 </body>
 </html>
